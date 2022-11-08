@@ -30,7 +30,7 @@ function cityWeather(cityName) {
 }
 
 function cityLatlon(cityLat, cityLon) {
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${cityLat}&lon=${cityLon}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${cityLat}&lon=${cityLon}&appid=${apiKey}`)
         .then(function (response) {
             console.log(response)
             return response.json()
